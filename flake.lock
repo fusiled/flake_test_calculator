@@ -1,0 +1,94 @@
+{
+  "nodes": {
+    "adder": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1729424306,
+        "narHash": "sha256-ChrH2iGrPhv6g6PUkqGZNo9W9ZyNyq6S3CYoFY2nBXY=",
+        "owner": "fusiled",
+        "repo": "flake_test_adder",
+        "rev": "59bd9b9cbc14dadc139d7cc3c7266947e75cea47",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fusiled",
+        "repo": "flake_test_adder",
+        "type": "github"
+      }
+    },
+    "multiplier": {
+      "inputs": {
+        "adder": "adder",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1729424866,
+        "narHash": "sha256-a6EF7/J7m97z9s0cKDpUVWKTwyKBWVymEAbmu49LJt8=",
+        "owner": "fusiled",
+        "repo": "flake_test_multiplier",
+        "rev": "4822586f6f71d140eb365ae1708d967b81dca944",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fusiled",
+        "repo": "flake_test_multiplier",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1659914493,
+        "narHash": "sha256-lkA5X3VNMKirvA+SUzvEhfA7XquWLci+CGi505YFAIs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "022caabb5f2265ad4006c1fa5b1ebe69fb0c3faf",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-21.05",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1659914493,
+        "narHash": "sha256-lkA5X3VNMKirvA+SUzvEhfA7XquWLci+CGi505YFAIs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "022caabb5f2265ad4006c1fa5b1ebe69fb0c3faf",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-21.05",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1659914493,
+        "narHash": "sha256-lkA5X3VNMKirvA+SUzvEhfA7XquWLci+CGi505YFAIs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "022caabb5f2265ad4006c1fa5b1ebe69fb0c3faf",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-21.05",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "multiplier": "multiplier",
+        "nixpkgs": "nixpkgs_3"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
